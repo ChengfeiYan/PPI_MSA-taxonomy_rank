@@ -1,5 +1,7 @@
 # PPI-MSA_taxonomy-rank
-In this repositoriy, a simplified phylogeny-based approach was applied to generate the MSA of protein-protein interologs, which was then used as the input of AlphaFold2 for protein complex structure prediction. 
+This repositoriy provides the simplified approach described in XXX to generate the MSA of interalogs for intra-species protein-protein interactions, which also allows the user to restrict to different taxonomic ranks of the species of target PPI in the MSA generation.
+The generated MSA of interologs can be further used as the input of Alphafold2 for protein complex structure prediction or as the input of DRN-1D2Dfor protein contact prediction.
+
 
 ## Installation
 ### 1.
