@@ -1,5 +1,5 @@
 # PPI-MSA_taxonomy-rank
-intra spacies MSA pairing
+In this repositoriy, a simplified phylogeny-based approach was applied to generate the MSA of protein-protein interologs, which was then used as the input of AlphaFold2 for protein complex structure prediction. 
 
 ## Installation
 ### 1.
