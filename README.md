@@ -6,7 +6,7 @@ The generated MSA of interologs can be further used as the input of Alphafold2 f
 ## Installation
 ### 1.
     git clone https://github.com/ChengfeiYan/PPI-MSA_taxonomy-rank.git
-### 2. Download the packaged species database
+### 2. Download the packaged species database (tax2id.pkl and taxdict.pkl)
     https://drive.google.com/file/d/1omdyzewWyx7E-orK6yu6wtMskfMPUmsj/view?usp=sharing
 
 ## Usage
@@ -20,11 +20,17 @@ The generated MSA of interologs can be further used as the input of Alphafold2 f
         corresponding to the name.
     7.  taxdict_file: Python's dictionary file, key is NCBI Taxonomy ID, value is the taxonomic ranks
         (species, genus, family, order, class, phylum, kingdom, domain). 
-    8.  refTaxID: NCBI Taxonomy ID of target A&B (9506, ...).
+    8.  refTaxID: NCBI Taxonomy ID of target A&B,Once you know the name of the species, 
+        you can get the NCBI Taxonomy ID corresponding to the name from https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi.
     9.  max_common_level: selected rank (species, genus, family, order, class, phylum, kingdom, domain, life).
         “life” was used to represent all species in the UniRef100 database.
-    10. cov: minimun converage with target sequence (50,60, ...).
-    11. topn: In each species, the topn matching sequence is selected (1,2,3, ...).
+    10. cov: minimun converage with target sequence, the recommended value is 60.
+    11. topn: In each species, the topn matching sequence is selected，When set to 1, it means that only the top pair is used, 
+        and when set to 100000, it means that all pairs are used..
 
 ### 2. Usage
     python pairing.py faA faB msaA msaB output_dir tax2id_file taxdb_file refTaxID max_common_level cov topn
+
+## Citing:
+Protein Complex Structure Prediction Powered by Multiple Sequence Alignment of Interologs from Multiple Taxonomic Ranks and AlphaFold2
+Yunda Si, Chengfei Yan. bioRxiv 2021.12.21.473437; doi: https://doi.org/10.1101/2021.12.21.473437
