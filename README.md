@@ -2,6 +2,7 @@
 This repositoriy provides the simplified approach described in [1] to generate the MSA of interalogs for intra-species protein-protein interactions, which also allows the user to restrict to different taxonomic ranks of the species of target PPI in the MSA generation.
 The generated MSA of interologs can be further used as the input of [Alphafold2](https://github.com/deepmind/alphafold) for protein complex structure prediction or as the input of [DRN-1D2D](https://github.com/ChengfeiYan/DRN-1D2D) for protein contact prediction.
 
+In addition, you can use /ptm/ptm.py to calculate the ptm value after removing the linker.
 
 ## Installation
 ### 1.
