@@ -35,4 +35,5 @@ In addition, you can use /ptm/ptm.py to calculate the ptm value after removing t
 ## Citing:
 [1]. Protein Complex Structure Prediction Powered by Multiple Sequence Alignment of Interologs from Multiple Taxonomic Ranks and AlphaFold2
 Yunda Si, Chengfei Yan. Briefings in Bioinformatics 23, bbac208, 2022.
+
 If you meet any problem in installing or running the program, please contact chengfeiyan@hust.edu.cn.
