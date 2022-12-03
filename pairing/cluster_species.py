@@ -6,7 +6,7 @@ Created on Wed Mar 24 12:06:13 2021
 @author: yunda_si
 """
 
-import rw_msa
+import rw_a2m
 import numpy as np
 import copy
 
