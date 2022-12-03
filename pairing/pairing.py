@@ -10,7 +10,7 @@ Created on Wed Sep 22 14:34:23 2021
 import os
 import cluster_species as cs
 import pickle
-import rw_msa
+import rw_a2m
 import sys
 
 
