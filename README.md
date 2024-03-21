@@ -1,6 +1,6 @@
 # PPI-MSA_taxonomy-rank
 This repositoriy provides the code implementation of the algorithm described in [1] to generate the MSA of interalogs for intra-species protein-protein interactions, which also allows the user to restrict interologs to different taxonomic ranks of the species of target PPI in the MSA generation.
-The generated MSA of interologs can be further used as the input of [Alphafold2](https://github.com/deepmind/alphafold) for protein complex structure prediction or as the input of [DRN-1D2D](https://github.com/ChengfeiYan/DRN-1D2D) for protein contact prediction.
+The generated MSA of interologs can be further used as the input of [Alphafold2](https://github.com/deepmind/alphafold) (GAPs or GLY Linkers should be added to connect the chains) for protein complex structure prediction.
 
 In addition, you can use /ptm/ptm.py to calculate the ptm value after removing the linker.
 
@@ -30,7 +30,7 @@ In addition, you can use /ptm/ptm.py to calculate the ptm value after removing t
             and when set to 100000, it means that all pairs are used..
 
 ### 2. Usage
-    python pairing.py faA faB msaA msaB output_dir tax2id_file taxdb_file refTaxID max_common_level cov topn
+    python pairing.py faA faB msaA msaB output_dir tax2id_file taxdic_file refTaxID max_common_level cov topn
 
 ## Citing:
 [1]. Protein Complex Structure Prediction Powered by Multiple Sequence Alignment of Interologs from Multiple Taxonomic Ranks and AlphaFold2
